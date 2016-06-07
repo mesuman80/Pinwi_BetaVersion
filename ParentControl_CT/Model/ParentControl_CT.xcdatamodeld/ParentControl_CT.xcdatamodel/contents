@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14B25" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="AllyProfileEntity" representedClassName="AllyProfileEntity" syncable="YES">
+        <attribute name="ally_ID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contact_no" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailAdd" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parent_ID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profilePic" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="relationship" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="relationship_ID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="alloyProfile" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ParentProfileEntity" inverseName="allyProfiles" inverseEntity="ParentProfileEntity" syncable="YES"/>
+    </entity>
+    <entity name="ChildProfileEntity" representedClassName="ChildProfileEntity" syncable="YES">
+        <attribute name="autolock_Time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="autolockID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="child_ID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dob" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="earnedPts" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nick_Name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parent_ID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="passcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pendingPts" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="school_ID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="school_Name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="childProfile" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ParentProfileEntity" inverseName="childrenProfiles" inverseEntity="ParentProfileEntity" syncable="YES"/>
+    </entity>
+    <entity name="ParentProfileEntity" representedClassName="ParentProfileEntity" syncable="YES">
+        <attribute name="autolockID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="autoLockTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cityId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deviceId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deviceToken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dob" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailAdd" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flatNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="googleMapAdd" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="neighbourID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="neighbourRad" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="passcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="passwd" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="relation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="streetLocality" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="allyProfiles" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="AllyProfileEntity" inverseName="alloyProfile" inverseEntity="AllyProfileEntity" syncable="YES"/>
+        <relationship name="childrenProfiles" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="ChildProfileEntity" inverseName="childProfile" inverseEntity="ChildProfileEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AllyProfileEntity" positionX="-36" positionY="153" width="128" height="195"/>
+        <element name="ChildProfileEntity" positionX="-54" positionY="144" width="128" height="285"/>
+        <element name="ParentProfileEntity" positionX="-63" positionY="-18" width="128" height="465"/>
+    </elements>
+</model>

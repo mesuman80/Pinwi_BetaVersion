@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PPPinPadViewController">
+            <connections>
+                <outlet property="_pinCirclesView" destination="TJJ-ed-aKk" id="Lm4-2m-5E0"/>
+                <outlet property="backgroundImageView" destination="Sz3-Nq-Ot1" id="LZt-dc-D3o"/>
+                <outlet property="cancelButton" destination="LV0-hW-d1F" id="To8-la-lmb"/>
+                <outlet property="forgotPasswordBtn" destination="ke1-Mw-nsD" id="1Fd-Ja-CWe"/>
+                <outlet property="pinErrorLabel" destination="FDB-av-pj8" id="Efv-uf-r2h"/>
+                <outlet property="resetButton" destination="Xj7-LT-87h" id="egI-p6-FhD"/>
+                <outlet property="view" destination="iN0-l3-epB" id="746-1a-lCl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sz3-Nq-Ot1">
+                    <rect key="frame" x="0.0" y="-20" width="600" height="620"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <variation key="heightClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="0.0" y="-20" width="1024" height="768"/>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="0.0" y="-20" width="800" height="820"/>
+                    </variation>
+                </imageView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KXf-zN-t12" userLabel="PinView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TJJ-ed-aKk" userLabel="CirclesView">
+                            <rect key="frame" x="132" y="292" width="320" height="52"/>
+                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                <rect key="frame" x="129" y="179" width="147" height="52"/>
+                            </variation>
+                        </view>
+                        <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g0h-mU-qOx" userLabel="errorView">
+                            <rect key="frame" x="132" y="180" width="600" height="40"/>
+                            <subviews>
+                                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PIN number not correct" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDB-av-pj8">
+                                    <rect key="frame" x="6" y="0.0" width="309" height="20"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                    <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                        <rect key="frame" x="239" y="0.0" width="309" height="20"/>
+                                    </variation>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="0.12889330169999999" blue="0.31505166330000001" alpha="0.45000000000000001" colorSpace="calibratedRGB"/>
+                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                <rect key="frame" x="-97" y="0.0" width="1024" height="40"/>
+                            </variation>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="100" y="0.0" width="600" height="250"/>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TLT-e5-a0a" userLabel="NumPad">
+                    <rect key="frame" x="0.0" y="200" width="600" height="600"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkZ-EL-ezo" customClass="PPCircleButton">
+                            <rect key="frame" x="265" y="3" width="70" height="70"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <state key="normal" title="2">
+                                <color key="titleColor" red="0.66666666669999997" green="0.75294117650000003" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                <rect key="frame" x="339" y="43" width="100" height="100"/>
+                            </variation>
+                            <connections>
+                                <action selector="numberButtonClick:" destination="-1" eventType="touchUpInside" id="h8Y-F8-7pm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uiG-H3-i4Q" customClass="PPCircleButton">
+                            <rect key="frame" x="400" y="3" width="70" height="70"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <state key="normal" title="3">
+                                <color key="titleColor" red="0.66666666669999997" green="0.75294117650000003" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                <rect key="frame" x="541" y="43" width="100" height="100"/>
+                            </variation>
+                            <connections>
+                                <action selector="numberButtonClick:" destination="-1" eventType="touchUpInside" id="647-Yn-xDd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJH-cX-yb1" customClass="PPCircleButton">
+                            <rect key="frame" x="400" y="86" width="70" height="70"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <state key="normal" title="6">
+                                <color key="titleColor" red="0.66666666669999997" green="0.75294117650000003" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                <rect key="frame" x="541" y="156" width="100" height="100"/>
+                            </variation>
+                            <connections>
+                                <action selector="numberButtonClick:" destination="-1" eventType="touchUpInside" id="UPM-ly-dex"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ReB-Md-dSE" customClass="PPCircleButton">
+                            <rect key="frame" x="265" y="86" width="70" height="70"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <state key="normal" title="5">
+                                <color key="titleColor" red="0.66666666669999997" green="0.75294117650000003" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                <rect key="frame" x="339" y="156" width="100" height="100"/>
+                            </variation>
+                            <connections>
+                                <action selector="numberButtonClick:" destination="-1" eventType="touchUpInside" id="eJX-xx-HO8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIj-cJ-CLL" customClass="PPCircleButton">
+                            <rect key="frame" x="130" y="86" width="70" height="70"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <state key="normal" title="4">
+                                <color key="titleColor" red="0.66666666669999997" green="0.75294117650000003" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                <rect key="frame" x="137" y="156" width="100" height="100"/>
+                            </variation>
+                            <connections>
+                                <action selector="numberButtonClick:" destination="-1" eventType="touchUpInside" id="UP8-r2-f11"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVR-5F-I4h" customClass="PPCircleButton">
+                            <rect key="frame" x="400" y="164" width="70" height="70"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <state key="normal" title="9">
+                                <color key="titleColor" red="0.66666666669999997" green="0.75294117650000003" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                <rect key="frame" x="541" y="271" width="100" height="100"/>
+                            </variation>
+                            <connections>
+                                <action selector="numberButtonClick:" destination="-1" eventType="touchUpInside" id="4W4-cw-dE0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjf-fc-5Ls" customClass="PPCircleButton">
+                            <rect key="frame" x="265" y="164" width="70" height="70"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <state key="normal" title="8">
+                                <color key="titleColor" red="0.66666666669999997" green="0.75294117650000003" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                <rect key="frame" x="339" y="271" width="100" height="100"/>
+                            </variation>
+                            <connections>
+                                <action selector="numberButtonClick:" destination="-1" eventType="touchUpInside" id="csv-iK-xhx"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y44-ep-9mX" customClass="PPCircleButton">
+                            <rect key="frame" x="265" y="242" width="70" height="70"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <state key="normal" title="0">
+                                <color key="titleColor" red="0.66666666669999997" green="0.75294117650000003" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                <rect key="frame" x="339" y="386" width="100" height="100"/>
+                            </variation>
+                            <connections>
+                                <action selector="numberButtonClick:" destination="-1" eventType="touchUpInside" id="1J7-SS-Zch"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4FM-KL-aGY" customClass="PPCircleButton">
+                            <rect key="frame" x="130" y="169" width="70" height="70"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <state key="normal" title="7">
+                                <color key="titleColor" red="0.66666666669999997" green="0.75294117650000003" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                <rect key="frame" x="137" y="271" width="100" height="100"/>
+                            </variation>
+                            <connections>
+                                <action selector="numberButtonClick:" destination="-1" eventType="touchUpInside" id="27T-bu-UEF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBW-q1-d3w" customClass="PPCircleButton">
+                            <rect key="frame" x="130" y="3" width="70" height="70"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <state key="normal" title="1">
+                                <color key="titleColor" red="0.66666666669999997" green="0.75294117650000003" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                <rect key="frame" x="137" y="43" width="100" height="100"/>
+                            </variation>
+                            <connections>
+                                <action selector="numberButtonClick:" destination="-1" eventType="touchUpInside" id="zki-VY-y8x"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LV0-hW-d1F">
+                            <rect key="frame" x="115" y="257" width="100" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                <rect key="frame" x="124" y="386" width="126" height="100"/>
+                            </variation>
+                            <connections>
+                                <action selector="cancelClick:" destination="-1" eventType="touchUpInside" id="199-c7-2Vo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xj7-LT-87h">
+                            <rect key="frame" x="420" y="262" width="30" height="30"/>
+                            <state key="normal" backgroundImage="delete.png">
+                                <color key="titleColor" red="0.66666666669999997" green="0.75294117650000003" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                <rect key="frame" x="566" y="411" width="50" height="50"/>
+                            </variation>
+                            <connections>
+                                <action selector="resetClick:" destination="-1" eventType="touchUpInside" id="rG3-78-UVv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="LV0-hW-d1F"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="0.0" y="299" width="800" height="691"/>
+                        <mask key="subviews">
+                            <include reference="LV0-hW-d1F"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MiG-UP-UgG">
+                    <rect key="frame" x="181" y="516" width="238" height="39"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ke1-Mw-nsD">
+                            <rect key="frame" x="-30" y="-7" width="299" height="54"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                            <state key="normal" title="Forgot Passcode"/>
+                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                <rect key="frame" x="-31" y="-6" width="299" height="80"/>
+                            </variation>
+                            <connections>
+                                <action selector="forgotPassword:" destination="-1" eventType="touchUpInside" id="CEW-mG-imk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="ke1-Mw-nsD"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="281" y="829" width="250" height="101"/>
+                        <mask key="subviews">
+                            <include reference="ke1-Mw-nsD"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="MiG-UP-UgG"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="subviews">
+                    <include reference="MiG-UP-UgG"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="381" y="334"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete.png" width="320" height="480"/>
+    </resources>
+</document>
