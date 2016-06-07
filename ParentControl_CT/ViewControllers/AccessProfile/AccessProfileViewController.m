@@ -452,7 +452,19 @@
     accessTable.delegate=self;
     accessTable.dataSource=self;
     
-    UIImageView *accessTableBackgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Child-Pinwheel-Bg.png"]];
+    UIImageView *accessTableBackgroundImageView;
+    
+    if (screenWidth>700) {
+        accessTableBackgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Child-Pinwheel-iPad.png"]];
+    }
+    else{
+        if (screenWidth>320) {
+            accessTableBackgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Child-Pinwheel-iPhone6.png"]];
+        }else{
+            accessTableBackgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Child-Pinwheel-iPhone5.png"]];
+        }
+    }
+    
     [accessTableBackgroundImageView setFrame:accessTable.frame];
     
     accessTable.backgroundView = accessTableBackgroundImageView;

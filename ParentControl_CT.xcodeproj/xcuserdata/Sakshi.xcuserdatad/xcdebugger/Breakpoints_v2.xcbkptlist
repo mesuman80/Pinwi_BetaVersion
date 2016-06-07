@@ -505,13 +505,13 @@
                   symbolName = "-[GetHolidayDetailsByHolidayDescController getMenuTouches]"
                   moduleName = "ParentControl_CT"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Works/Pinwi/pinwi-ios/ParentControl_CT/ViewControllers/GetHolidayDetailsByHolidayDescController.m"
-                  timestampString = "486545897.540167"
+                  urlString = "file:///Works/Pinwi_BetaVersion/ParentControl_CT/ViewControllers/GetHolidayDetailsByHolidayDescController.m"
+                  timestampString = "486980371.919312"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "202"
                   endingLineNumber = "202"
-                  offsetFromSymbolStart = "92">
+                  offsetFromSymbolStart = "95">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -520,13 +520,13 @@
                   symbolName = "__Block_byref_object_copy_"
                   moduleName = "ParentControl_CT"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Works/Pinwi/pinwi-ios/ParentControl_CT/ViewControllers/GetHolidayDetailsByHolidayDescController.m"
-                  timestampString = "486545897.54037"
+                  urlString = "file:///Works/Pinwi_BetaVersion/ParentControl_CT/ViewControllers/GetHolidayDetailsByHolidayDescController.m"
+                  timestampString = "486980371.919545"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "202"
                   endingLineNumber = "202"
-                  offsetFromSymbolStart = "24">
+                  offsetFromSymbolStart = "16">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -535,13 +535,13 @@
                   symbolName = "__Block_byref_object_dispose_"
                   moduleName = "ParentControl_CT"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Works/Pinwi/pinwi-ios/ParentControl_CT/ViewControllers/GetHolidayDetailsByHolidayDescController.m"
-                  timestampString = "486545897.540636"
+                  urlString = "file:///Works/Pinwi_BetaVersion/ParentControl_CT/ViewControllers/GetHolidayDetailsByHolidayDescController.m"
+                  timestampString = "486980371.919773"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "202"
                   endingLineNumber = "202"
-                  offsetFromSymbolStart = "20">
+                  offsetFromSymbolStart = "16">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1208,13 +1208,13 @@
                   symbolName = "-[CalenderByDateCell addSubject:]"
                   moduleName = "ParentControl_CT"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Works/Pinwi/pinwi-ios/ParentControl_CT/ViewControllers/TabbarViewController/Activity/ActivityCalendar/CalenderByDateCell.m"
-                  timestampString = "486545897.54902"
+                  urlString = "file:///Works/Pinwi_BetaVersion/ParentControl_CT/ViewControllers/TabbarViewController/Activity/ActivityCalendar/CalenderByDateCell.m"
+                  timestampString = "486980371.92895"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "110"
                   endingLineNumber = "110"
-                  offsetFromSymbolStart = "1876">
+                  offsetFromSymbolStart = "2974">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1223,13 +1223,13 @@
                   symbolName = "-[CalenderByDateCell addSubject:]"
                   moduleName = "ParentControl_CT"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Works/Pinwi/pinwi-ios/ParentControl_CT/ViewControllers/TabbarViewController/Activity/ActivityCalendar/CalenderByDateCell.m"
-                  timestampString = "486545897.549174"
+                  urlString = "file:///Works/Pinwi_BetaVersion/ParentControl_CT/ViewControllers/TabbarViewController/Activity/ActivityCalendar/CalenderByDateCell.m"
+                  timestampString = "486980371.929191"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "110"
                   endingLineNumber = "110"
-                  offsetFromSymbolStart = "1896">
+                  offsetFromSymbolStart = "2989">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1801,11 +1801,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ParentControl_CT/ViewControllers/ChildUI/RatingScreen/RatingConfirmation_VC.m"
-            timestampString = "482224986.658536"
+            timestampString = "486980370.582658"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "396"
-            endingLineNumber = "396"
+            startingLineNumber = "406"
+            endingLineNumber = "406"
             landmarkName = "-addPointsEarned"
             landmarkType = "5">
          </BreakpointContent>
@@ -2095,22 +2095,6 @@
             startingLineNumber = "325"
             endingLineNumber = "325"
             landmarkName = "-getDataFromWebService"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ParentControl_CT/ViewControllers/ChildUI/RatingScreen/ChildSubjectRatingViewController.m"
-            timestampString = "482668743.465784"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "-viewWillAppear:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2985,11 +2969,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ParentControl_CT/ViewControllers/ChildUI/RatingScreen/RatingConfirmation_VC.m"
-            timestampString = "485254452.32142"
+            timestampString = "486980370.582658"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "510"
-            endingLineNumber = "510"
+            startingLineNumber = "520"
+            endingLineNumber = "520"
             landmarkName = "-connectionDidFinishLoadingData:withService:"
             landmarkType = "5">
          </BreakpointContent>
@@ -3177,11 +3161,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ParentControl_CT/ViewControllers/ChildUI/RatingScreen/RatingConfirmation_VC.m"
-            timestampString = "485248389.0002"
+            timestampString = "486980370.582658"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "482"
-            endingLineNumber = "482"
+            startingLineNumber = "492"
+            endingLineNumber = "492"
             landmarkName = "-connectionDidFinishLoadingData:withService:"
             landmarkType = "5">
          </BreakpointContent>
@@ -3193,44 +3177,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ParentControl_CT/ViewControllers/ChildUI/RatingScreen/RatingConfirmation_VC.m"
-            timestampString = "485254181.983621"
+            timestampString = "486980370.582658"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "534"
-            endingLineNumber = "534"
+            startingLineNumber = "544"
+            endingLineNumber = "544"
             landmarkName = "-connectionDidFinishLoadingData:withService:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ParentControl_CT/ViewControllers/Services/GetChildAfterSchoolActiviesByDay.m"
-            timestampString = "485255682.093527"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "-initService:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ParentControl_CT/ViewControllers/Services/GetChildSubjectActiviesByDay.m"
-            timestampString = "485255698.757414"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "-initService:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3832,13 +3784,13 @@
                   symbolName = "-[ProfileSetUp2 mapView:idleAtCameraPosition:]"
                   moduleName = "ParentControl_CT"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Works/Pinwi/pinwi-ios/ParentControl_CT/ViewControllers/ProfilesScreen/ProfileSetUp2.m"
-                  timestampString = "486545897.638561"
+                  urlString = "file:///Works/Pinwi_BetaVersion/ParentControl_CT/ViewControllers/ProfilesScreen/ProfileSetUp2.m"
+                  timestampString = "486980372.055344"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "1200"
                   endingLineNumber = "1200"
-                  offsetFromSymbolStart = "84">
+                  offsetFromSymbolStart = "77">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -3847,13 +3799,13 @@
                   symbolName = "__46-[ProfileSetUp2 mapView:idleAtCameraPosition:]_block_invoke"
                   moduleName = "ParentControl_CT"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Works/Pinwi/pinwi-ios/ParentControl_CT/ViewControllers/ProfilesScreen/ProfileSetUp2.m"
-                  timestampString = "486545897.638704"
+                  urlString = "file:///Works/Pinwi_BetaVersion/ParentControl_CT/ViewControllers/ProfilesScreen/ProfileSetUp2.m"
+                  timestampString = "486980372.055579"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "1201"
                   endingLineNumber = "1201"
-                  offsetFromSymbolStart = "80">
+                  offsetFromSymbolStart = "75">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -4207,6 +4159,38 @@
             startingLineNumber = "297"
             endingLineNumber = "297"
             landmarkName = "-drawLabelWithText:andColor:andFont:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ParentControl_CT/ViewControllers/ChildUI/RatingScreen/RatingConfirmation_VC.m"
+            timestampString = "486980181.658593"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ParentControl_CT/ViewControllers/ChildUI/ChildDashboardViewController.m"
+            timestampString = "486980185.876413"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

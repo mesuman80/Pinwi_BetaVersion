@@ -39,7 +39,18 @@
 
 -(void)backgroundImage
 {
-    UIImageView *bgImg=[[UIImageView alloc]initWithImage:[UIImage imageNamed:isiPhoneiPad(@"Child-Pinwheel-Bg.png")]];
+    UIImageView *bgImg;
+    if (screenWidth>700) {
+        bgImg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Child-Pinwheel-iPad.png"]];
+    }
+    else{
+        if (screenWidth>320) {
+            bgImg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Child-Pinwheel-iPhone6.png"]];
+        }else{
+            bgImg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Child-Pinwheel-iPhone5.png"]];
+        }
+    }
+
     bgImg.frame=CGRectMake(0, 0, screenWidth, screenHeight);
     bgImg.center=CGPointMake(screenWidth/2, screenHeight/2);
     [self.view addSubview:bgImg];
